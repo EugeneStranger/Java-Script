@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+23:55 20.08.2024
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Michel Stanne">
+    <meta name="description" content="Introduction to Web PD_321.">
+    <title>Introduction to HTML</title>
+    <link rel="icon" href="bitcoin.ico" type="image/xicon">
+</head>
+
+<body>
+    <menu label="Menu1" type="context">
+        <menuitem>Menu Item 1</menuitem>
+        <menuitem>Menu Item 2</menuitem>
+        <menuitem>Menu Item 3</menuitem>
+    </menu>
+
+    <h1>Заголовок 1 !!! Может быть только один на странице (это, как название книги)</h1>
+    <hr>
+    <!--<h2>Заголовок 2</h2>
+    <h3>Заголовок 3</h3>
+    <h4>Заголовок 4</h4>
+    <h5>Заголовок 5</h5>
+    <h6>Заголовок 6</h6>
+    <hr>-->
+    <a href="https://litecoin.com" target="blank"><img src="litecoin.png" alt="Litecoin" align="right" /></a>
+    <h2 contextmenu="Menu1">Дескрипторы (Tags)</h2>
+    <h3 contextmenu="Menu1">Блочные дескрипторы</h3>
+    <p>
+        <b>&#60;p&#62; (Paragraph)</b> - блочный дескриптор, который описывает абзац и поддерживает следующие атрибуты:
+        <br>0
+        <b>align</b><i>="left | right | center | justify"</i> - выравнивание абзаца.
+    </p>
+    <hr>
+    <h3>Линейные дескрипторы</h3>
+
+    <b>&lt;b&gt; (bold)</b> &ndash; линейный парный дескриптор, который делает шрифт полужирным.<br>
+    <b>&lt;i&gt;</b> (<i>italic</i>) &ndash; линейный парный дескриптор, который делает шрифт курсивом.<br>
+    <b>&lt;u&gt;</b> (<u>underline</u>) &ndash; линейный парный дескриптор, который делает шрифт подчёркнутым.<br>
+    <b>&lt;s&gt;</b> (<s>strikeout</s>) &ndash; линейный парный дескриптор, который делает шрифт зачёркнутым.<br>
+    <b>&lt;strike&gt;</b> (<strike>strikeout</strike>) &ndash; линейный парный дескриптор, который делает шрифт зачёркнутым.<br>
+    <b>&lt;big&gt;</b> (<big>big</big>) &ndash; линейный парный дескриптор, который делает размер шрифта на единицу больше базового (базовый шрифт в любом браузере = <tt><b>16pt</b></tt>).<br>
+    <b>&lt;small&gt;</b> (<small>small</small>) &ndash; линейный парный дескриптор, который делает размер шрифта на единицу меньше базового.<br>
+    <b>&lt;sub&gt;</b> (<sub>sub</sub>) &ndash; нижний индекс.<br>
+    <b>&lt;sup&gt;</b> (<sup>sup</sup>) &ndash; верхний индекс.<br>
+    <hr>
+    <p>
+        Специальные символы можно отображать на странице при помощи числовых кодов, или их символических аналогов.
+        Большинство специальных символов можно найти <a href="https://htmlbook.ru/samhtml/tekst/spetssimvoly" target="_blank">здесь.</a>
+
+    </p>
+    <!--<img src="1.png">/-->
+    </hr>
+    <p>
+        <b><i><u>Дескрипторы можно вкладывать друг в друга, но важно, чтобы последний открытый дескриптор закрывался первым.</u></i></b>
+    </p>
+    <hr>
+    <p>
+        <tt>Моноширный (Моношримный) шрифт</tt>
+    </p>
+    <br><tt><b>Alt + Shift + W</tt></b> - обернуть выделение в дескриптор.<br>
+    <hr>
+    <p align="center">
+        <big><big><b><i>N = a<sup>n</sup>;</i></b></big></big>
+    </p>
+    <!--<p><p align="justify">
+        Привет. Добро пожаловать
+        Hello! Wellcome!
+    </p>-->
+    <hr>
+    <h2>Списки</h2>
+    <p>
+        Списки бывают <em>нумерованные</em> и <em>маркерованные</em>.
+        Нумерованный список помещается в парный дескриптор <strong>&#60;ol&#62</strong>, что означает <em>Ordered List</em> (Сортированный список).<br>
+        Маркированные списки помещаются в парный дескриптор <strong>&lt;ul&gt</strong>, &ndash; <em>Unordered List</em> (Несортированный список).<br>
+        Пункты как маркированных, так и нумерованных списков обозначаются дескриптором <strong>&lt;li&gt</strong> &ndash; <em>List Item</em>
+    </p>
+    <hr>
+    <p>
+        <h3>Маркированный список:</h3>
+        <ul type="disc">
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+        </ul>
+        <hr>
+        <h3>Нумерованный список:</h3>
+        <ol>
+            <li>Item1</li>
+            <li>
+                Item2:
+                <ul type="disc">
+                    <li>Item</li>
+                    <li>Item</li>
+                </ul>
+            </li>
+            <li>Item3</li>
+        </ol>
+    </p>
+    <hr />
+    <h2>Глобальные атрибуты</h2>
+    <p>
+        Применимы ко всем дескрипторам. Список всех глобальных атрибутов <a href="htttps://html.book.ru/html/attr/common" target="blank">здесь</a>
+        и <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Global_attributes" target="blank">здесь</a>
+    </p>
+</body>
+</html>

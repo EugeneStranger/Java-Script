@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+<!DOCTYPE html>
+
+23:55 20.08.2024
+<head>
+    <meta charset="utf-8">
+    <title>Типы данных в языке C++</title>
+</head>
+<body>
+    <h1 align="center">Типы данных в языке C++</h1>
+    <p>
+        <strong>
+            Переменная &ndash; это именованная область памяти, содержимое которой может изменяться в процессе выполнения программы.
+            Прежде, чем использовать переменную, её нужно объявить. Для объявления переменной нужно указать её тип и имя следующим образом:<br>
+            <pre>
+		
+            <code align="center">
+            <strong><tt style="color:Blue">type</tt> name;</strong>
+		</code>	
+		</pre>
+        </strong>
+    </p>
+    <p>
+        <strong><tt>type</tt> (тип переменной)</strong>, определяет тип переменной:
+        <ol>
+            <li>Сколько памяти переменная будет занимать;</li>
+            <li>Какие значения она будет принимать;</li>
+            <li>Какие операции над ней можно выполнять.</li>
+        </ol>
+    </p>
+    <p>
+        Все типы данных в языке C++ можно разделить на следующие категории:
+        <ol type="1">
+            <li>
+                <strong>Логические типы.</strong> Включает в себя всего один тип данных &ndash; <strong><tt style="color:Blue">bool</tt> (Boolean)</strong>.
+                Переменная типа <strong><tt style="color:Blue">bool</tt></strong> занимает 1 Байт памяти и принимает одно из двух значений:
+                <strong><tt style="color:Blue">true</tt></strong> или <strong><tt style="color:Blue">false</tt></strong>
+                <strong><tt style="color:Blue">true</tt></strong> хранится в памяти как 1, а <strong><tt style="color:Blue">false</tt></strong> как 0. На самом деле
+                0 &ndash; это <strong><tt style="color:Blue">false</tt></strong>, а <strong><tt style="color:Blue">true</tt></strong> &ndash; это всё, что НЕ 0.
+            </li>
+            <li>
+                <strong>Символьные типы.</strong> Включает в себя всего один тип данных &ndash; <strong><tt style="color:Blue">char</tt></strong>.
+                Переменная типа <strong><tt style="color:Blue">char</tt></strong> занимает 1 Байт памяти и содержит один единственный символ в кодировке ASCII. 
+                Всего в кодировке ASCII 256 символов, поэтому переменная типа <strong><tt style="color:Blue">char</tt></strong> хранит один из 256 символов.
+            </li>
+            <li>
+            <strong>Числовые типы.</strong> Делятся на две категории:
+                <ul>
+                    <li>
+                        <strong>Целочисленные.</strong> Могут быть знаковыми <i>(Signed)</i> и беззнаковыми <i>(Unsigned)</i>. 
+                        <i>Signed</i> могут хранить положительные и отрицательные значения. 
+                        <i>Unsigned</i> могут хрантить только положительные значения. <br>
+                        К <strong>целочисленным</strong> относятся следующие типы данных:
+                          <ol>
+                              <li>
+                                  <strong><tt style="color:Blue">Short</tt></strong>. Переменная типа <strong><tt style="color:Blue">short</tt></strong>
+                                  занимает 2 Байтa памяти и может принимать следующие значения:<br>
+                                  <ul>
+                                      <li>
+                                          <strong><tt style="color:Blue">unsigned short</tt></strong> в диапазоне: 0...65535 (0...2<sup>16</sup>-1);
+                                      </li>
+                                      <li>
+                                          <strong><tt style="color:Blue">signed short</tt></strong> в диапазоне: -32768...32767 
+                                          (-2<sup>15</sup>...2<sup>15</sup>-1).
+                                      </li>
+                                  </ul>
+                              </li>
+                              <li>
+                                  <strong><tt style="color:Blue">Long</tt></strong>. Переменная типа <strong><tt style="color:Blue">long</tt></strong>
+                                  занимает 4 Байтa памяти и может принимать следующие значения:<br>
+                                  <ul>
+                                      <li>
+                                          <strong><tt style="color:Blue">unsigned long</tt></strong> в диапазоне: 0...4294967295 (0...2<sup>32</sup>-1);
+                                      </li>
+                                      <li>
+                                          <strong><tt style="color:Blue">signed long</tt></strong> в диапазоне: -2147483648...2147483647
+                                          (-2<sup>31</sup>...2<sup>31</sup>-1).
+                                      </li>
+                                  </ul>
+                              </li>
+                              <li>
+                                  <strong><tt style="color:Blue">Int</tt></strong> &ndash;
+                                  платформенно-зависимый тип данных. Его размер зависит от типа процессора, операционной системы и среды разработки. 
+                                  Но в любом случае размер должен быть больше или равен размеру типа <strong><tt style="color:Blue">short</tt></strong> 
+                                  и меньше или равен размеру типа <strong><tt style="color:Blue">long</tt></strong>.                                   В Microsoft Visual Studio под Windows, <strong><tt style="color:Blue">int</tt></strong> всегда занимает 4 Байта памяти и
+                                  полностью совпадает с <strong><tt style="color:Blue">long</tt></strong>.
+                              </li>
+                              <li>
+                                  <strong><tt style="color:Blue">Long long</tt></strong>. Переменная типа <strong><tt style="color:Blue">long long</tt></strong>
+                                  занимает 8 Байт памяти и может принимать следующие значения:<br>
+                                  <ul>
+                                      <li>
+                                          <strong><tt style="color:Blue">unsigned long long</tt></strong> в диапазоне: 0...4294967295 (0...2<sup>64</sup>-1);
+                                      </li>
+                                      <li>
+                                          <strong><tt style="color:Blue">signed long long</tt></strong> в диапазоне: -2147483648...2147483647
+                                          (-2<sup>63</sup>...2<sup>63</sup>-1).
+                                      </li>
+                                  </ul>
+                              </li>
+                          </ol>
+                        <ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Вещественные</strong> (числа с плавающей точкой).  К <strong>вещественным</strong> относятся следующие типы данных:
+                        <ol>
+                            <li>
+                                <strong><tt style="color:Blue">Float</tt></strong>. Переменная типа <strong><tt style="color:Blue">float</tt></strong>
+                                занимает 4 Байтa памяти и может принимать следующие значения в диапазоне: +(-)1.17549e-38...3.40282e+38.<br>
+                                Переменная типа <strong><tt style="color:Blue">float</tt></strong> способна хранить 38 знаков после запятой 
+                                с точностью до 7 знаков.
+                            </li>
+                            <li>
+                                <strong><tt style="color:Blue">Double</tt></strong>. Переменная типа <strong><tt style="color:Blue">double</tt></strong>
+                                занимает 8 Байт памяти и может принимать следующие значения в диапазоне: +(-)2.22507e-308...1.79769e+308.<br>
+                                Переменная типа <strong><tt style="color:Blue">double</tt></strong> способна хранить 308 знаков после запятой
+                                с точностью до 15 знаков.
+                            </li>
+                        </ol>
+
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </p>
+
+</body>
+</html>
